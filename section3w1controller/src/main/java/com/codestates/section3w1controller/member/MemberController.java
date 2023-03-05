@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.*;
 /** URL 앞에 value 애트리뷰트 설정해야 함(다른 애트리뷰트가 생겼으므로) */
 public class MemberController {
     @PostMapping
-    public String postMember(@RequestParam("email") String email
-            ,
+    public String postMember(@RequestParam("email") String email,
+                             /** @RequestParam = HttpServletRequest 객체가 받은 파라미터*/
                              @RequestParam("name") String name,
                              @RequestParam("phone") String phone) {
         System.out.println("# email: " + email);
