@@ -34,7 +34,7 @@ public class MemberController {
     }
 
     @GetMapping("/{member-id}")
-    public String getMember(@PathVariable("member-id")long memberId)
+    public String getMember(@PathVariable("member-id") long memberId)
     /** @PathVariable역시 핸들러 메서드의 파라미터 종류 중 하나입니다.
 
      @PathVariable의 괄호 안에 입력한 문자열 값은 @GetMapping("/{member-id}") 처럼 중괄호({ }) 안의 문자열과 동일해야 합니다. 여기서는 두 문자열 모두 “member-id” 로 동일하게 지정해주었습니다.
